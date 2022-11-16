@@ -1,0 +1,62 @@
+#menu-left {
+    height: 450px
+}
+
+#chatAvecDude {
+    height: 250px;
+    width: 250px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 0 auto;
+    color: black;
+    position: absolute;
+}
+
+#petitCroixDude {
+    color: white;
+    height: 35px;
+    width: 35px;
+}
+
+#dashboard {
+    width: 243px;
+    height: 30rem;
+    border: 1px solid;
+    background-color: #0000007a;
+    box-shadow: 1px 4px 6px #ffffff;
+    padding: 0.75rem;
+    z-index: 101;
+    margin-left: 3%;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.dashboardMini {
+    width: 5%;
+}
+
+.styleBasic {
+    box-shadow: 1px 4px 6px #00A3CF;
+    background-color: #2C3060 !important;
+    text-shadow: 1px 4px 6px #2C3060;
+    color: white;
+}
+
+#boiteDeDialogue {
+    text-align: center;
+    border: 1px solid;
+    margin: 0 auto;
+    background-color: #2C3060;
+    box-shadow: 1px 4px 6px #00a3cf;
+    padding: 0.75rem;
+    color: white;
+    width: 89%;
+    margin: 0 auto;
+}
+
+#boiteDeDialogueEnvoi {
+    margin-top: 23%;
+}
+
+#boutonEnvoieBoiteDeDialogue {}

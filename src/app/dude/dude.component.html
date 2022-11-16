@@ -1,0 +1,4 @@
+<img [src]="dude.dudeUrl" id="dude" [ngClass]="{
+ 'dude'   : this.dude.positionDude === true,
+'dudeMini': this.dude.positionDude === false
+}" (click)=clickOnDude() class=>

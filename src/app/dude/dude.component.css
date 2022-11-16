@@ -1,0 +1,28 @@
+.dude {
+    width: 7rem;
+    position: relative;
+    margin-left: 22%;
+    transition: 0.75s linear;
+}
+
+.dudeMini {
+    width: 7rem;
+    position: relative;
+    margin-left: 22%;
+    transition: 0.75s linear;
+}
+
+@media screen and(max-width:500px) {
+    .dude {
+        width: 7rem;
+        z-index: 1000;
+        transition: 0.75s linear;
+    }
+
+    .dudeMini {
+        width: 2rem;
+        position: relative;
+        margin-left: 22%;
+        transition: 0.75s linear;
+    }
+}

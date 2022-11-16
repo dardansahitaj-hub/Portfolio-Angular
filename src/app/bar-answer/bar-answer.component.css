@@ -1,0 +1,35 @@
+.bar-answer {
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    top: 98px;
+    left: 10%;
+    color: white;
+    box-shadow: 1px 4px 6px #2c3060;
+    background-color: #00a3cf !important;
+    text-shadow: 1px 4px 6px #2c3060;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 4px;
+    z-index: 101;
+}
+
+.question-button {
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: #0000007a;
+    box-shadow: 1px 4px 6px #ffffff;
+    padding: 0.75rem;
+    color: white !important
+}
+
+.send-button {
+    border-radius: 4px;
+    border: 1px solid;
+    background-color: #0000007a;
+    box-shadow: 1px 4px 6px #ffffff;
+    padding: 0.75rem;
+    color: white !important;
+    width: 110px;
+}

@@ -1,0 +1,23 @@
+<div class="bar-answer">
+    <div class="row">
+        <div class="col-9">{{answerBar.server.reponseValue}}</div>
+        <div class="col-3">
+
+            <input type="text" id="boiteDeDialogueEnvoi" #box (keyup)="onEnter(box.value)" class="question-button"
+                placeholder="Une question?">
+            <button type="button" id="boutonEnvoieBoiteDeDialogue" class="send-button" (click)=answerDude()>
+                Envoyer
+            </button>
+        </div>
+    </div>
+
+    <script>
+        var input = document.getElementById("boiteDeDialogueEnvoi");
+        input.addEventListener("keyup", function (event) {
+            if (event.keyCode === 13) {
+                loadAjaxPhp();
+                document.getElementById("boiteDeDialogueEnvoi").click();
+            }
+        });
+    </script>
+</div>

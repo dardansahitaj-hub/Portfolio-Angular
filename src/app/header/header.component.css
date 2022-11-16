@@ -1,0 +1,100 @@
+header {
+    background-color: #2c306080;
+    height: 25px;
+    width: 100%;
+    box-shadow: 1px 4px 6px #00a3cf;
+    padding: 13px;
+    z-index: 1000;
+    position: fixed;
+    margin-top: 1.2rem;
+}
+
+.logoDardanSahitaj {
+    /* position: absolute; */
+    width: 16%;
+    margin-top: 0rem;
+}
+
+nav ul {
+    margin-top: 1rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    --c: #2C3060;
+    color: var(--c);
+    border: 0.1em solid var(--c);
+    width: 20em;
+    height: 2em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+nav ul li:hover {
+    width: 25rem;
+    transition: 1s linear;
+}
+
+nav ul li a {
+    text-align: center;
+    font-size: 1rem !important;
+}
+
+nav ul li a:hover {
+    text-align: center;
+    font-size: 1.3rem !important;
+    transition: 1s linear;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: black;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
+}
+
+.buttonHeader {
+    background-color: #00A3CF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.buttonHeader:hover {
+    box-shadow: 1px 4px 6px #00A3CF;
+    background-color: #00A3CF;
+    text-shadow: 1px 4px 6px #2C3060;
+}
