@@ -10,9 +10,10 @@ header {
 }
 
 .logoDardanSahitaj {
-    /* position: absolute; */
-    width: 16%;
+    position: absolute;
+    width: 50px;
     margin-top: 0rem;
+    left: 10px;
 }
 
 nav ul {
@@ -25,7 +26,7 @@ nav ul li {
     --c: #2C3060;
     color: var(--c);
     border: 0.1em solid var(--c);
-    width: 20em;
+    width: 10em;
     height: 2em;
     position: relative;
     overflow: hidden;
@@ -34,13 +35,16 @@ nav ul li {
 }
 
 nav ul li:hover {
-    width: 25rem;
-    transition: 1s linear;
+    top: 5px;
+    width: 15rem;
+    height: 3em;
+    transition: 2s linear;
 }
 
 nav ul li a {
     text-align: center;
     font-size: 1rem !important;
+    color: white;
 }
 
 nav ul li a:hover {

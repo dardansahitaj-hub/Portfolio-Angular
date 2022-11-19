@@ -13,4 +13,5 @@ footer {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+    z-index: 2000;
 }

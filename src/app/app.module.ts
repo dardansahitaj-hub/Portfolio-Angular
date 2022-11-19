@@ -11,6 +11,12 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
 import { ChatComponent } from './chat/chat.component';
 import { BarAnswerComponent } from './bar-answer/bar-answer.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProgrammationComponent } from './pages/programmation/programmation.component';
+import { MarketingComponent } from './pages/marketing/marketing.component';
+import { FormationComponent } from './pages/formation/formation.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { AProposDeMoiComponent } from './pages/a-propos-de-moi/a-propos-de-moi.component';
+import { GraphismeComponent } from './pages/graphisme/graphisme.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +28,13 @@ import { FooterComponent } from './footer/footer.component';
     CarrouselComponent,
     ChatComponent,
     BarAnswerComponent,
-    FooterComponent
+    FooterComponent,
+    ProgrammationComponent,
+    MarketingComponent,
+    FormationComponent,
+    ContactComponent,
+    AProposDeMoiComponent,
+    GraphismeComponent
   ],
   imports: [
     BrowserModule,

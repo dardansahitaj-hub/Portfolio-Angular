@@ -24,7 +24,6 @@
               "src/assets/img/img"
             ],
             "styles": [
-              "src/assets/fonts/customFont.css",
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css"
             ],
@@ -96,8 +95,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "src/assets/fonts/customFont.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
