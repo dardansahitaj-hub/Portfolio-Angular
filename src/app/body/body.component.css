@@ -1,12 +1,14 @@
 #body {
-    margin-top: 50px;
-    min-height: 700px;
+    min-height: 500px;
     margin-bottom: 50px;
     box-shadow: 1px 4px 6px #2c3060;
     background-color: #00a3cf !important;
     margin-left: 12rem;
+    margin-top: 50px;
     border-radius: 4px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 700px) {
