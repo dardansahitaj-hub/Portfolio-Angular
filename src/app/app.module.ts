@@ -17,7 +17,7 @@ import { FormationComponent } from './pages/formation/formation.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AProposDeMoiComponent } from './pages/a-propos-de-moi/a-propos-de-moi.component';
 import { GraphismeComponent } from './pages/graphisme/graphisme.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,9 +38,11 @@ import { GraphismeComponent } from './pages/graphisme/graphisme.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
-  providers: [DudeComponent],
+  providers: [DudeComponent,
+    ContactComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

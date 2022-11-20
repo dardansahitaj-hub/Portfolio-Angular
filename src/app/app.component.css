@@ -3,8 +3,34 @@
     src: url("../assets/fonts/minecraft.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: robot-dreamer;
+    src: url("../assets/fonts/robot-dreamer.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: christmas;
+    src: url("../assets/fonts/christmas.otf") format("truetype");
+}
+
+@font-face {
+    font-family: signature;
+    src: url("../assets/fonts/thesignature.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: winter-city;
+    src: url("../assets/fonts/winter-city.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: lemonmilk-regular;
+    src: url("../assets/fonts/lemonmilk-regular.otf") format("truetype");
+}
+
 * {
-    font-family: minecraft !important;
+    font-family: lemonmilk-regular !important;
+    color: white;
 }
 
 .corps {
@@ -19,14 +45,4 @@
     box-shadow: 1px 4px 6px #00A3CF;
     background-color: #2C3060 !important;
     text-shadow: 1px 4px 6px #2C3060;
-}
-
-
-
-@media screen and (max-width: 700px) {
-    #body {
-        min-height: 350px;
-        /* position: relative;
-    right: inherit; */
-    }
 }
