@@ -1,0 +1,67 @@
+.imgDev {
+    width: 75px;
+    height: 75px;
+    background-color: white;
+    margin: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    float: left;
+}
+
+.barre_progression {
+    width: 100%;
+    height: 50px;
+    background: blue;
+    border: 1px solid white;
+    border-radius: 3px;
+    animation: barre_progression 5s ease-out;
+    -webkit-animation: barre_progression 5s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****animation barre progression *****/
+@keyframes barre_progression {
+    0% {
+        width: 0%;
+        opacity: 0
+    }
+
+    4% {
+        width: 0%;
+        opacity: .3
+    }
+
+    96% {
+        width: 96%;
+        opacity: .7
+    }
+
+    100% {
+        width: 100%;
+        opacity: 0
+    }
+}
+
+@-webkit-keyframes barre_progression {
+    0% {
+        width: 0%;
+        opacity: 0
+    }
+
+    4% {
+        width: 0%;
+        opacity: .3
+    }
+
+    96% {
+        width: 96%;
+        opacity: .7
+    }
+
+    100% {
+        width: 100%;
+        opacity: 0
+    }
+}
