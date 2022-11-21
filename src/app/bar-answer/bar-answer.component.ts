@@ -7,7 +7,6 @@ import { AnswerBarService } from '../service/answer-bar.service';
 })
 export class BarAnswerComponent implements OnInit {
 
-  @Input() boiteDeDialogueEnvoi = ""
 
   constructor() {
   }
@@ -47,11 +46,6 @@ export class BarAnswerComponent implements OnInit {
       this.answerBar.server.reponseValue = "Vous restez la bienvenue ! "
     }
 
-  }
-
-  answerDude() {
-    console.log(this.boiteDeDialogueEnvoi)
-    return this.answerBar.server.resultat;
   }
 
   getQuestionClient() {

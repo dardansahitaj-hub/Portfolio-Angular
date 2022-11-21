@@ -9,7 +9,7 @@
 }
 
 .barre_progression {
-    width: 100%;
+    width: 20%;
     height: 50px;
     background: blue;
     border: 1px solid white;
@@ -28,18 +28,18 @@
         opacity: 0
     }
 
-    4% {
-        width: 0%;
+    35% {
+        width: 7%;
         opacity: .3
     }
 
-    96% {
-        width: 96%;
+    65% {
+        width: 10%;
         opacity: .7
     }
 
     100% {
-        width: 100%;
+        width: 20%;
         opacity: 0
     }
 }
@@ -50,18 +50,18 @@
         opacity: 0
     }
 
-    4% {
-        width: 0%;
+    35% {
+        width: 7%;
         opacity: .3
     }
 
-    96% {
-        width: 96%;
+    65% {
+        width: 10%;
         opacity: .7
     }
 
     100% {
-        width: 100%;
+        width: 20%;
         opacity: 0
     }
 }
