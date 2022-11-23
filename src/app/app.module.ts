@@ -42,7 +42,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ReactiveFormsModule
   ],
   providers: [DudeComponent,
-    ContactComponent],
+    ContactComponent,
+    BarAnswerComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

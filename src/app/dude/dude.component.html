@@ -1,4 +1,6 @@
-<img [src]="dude.dudeUrl" id="dude" [ngClass]="{
- 'dude'   : this.dude.positionDude === true,
+<img [src]="dude.dudeUrl" id="dude" (click)=clickOnDude() class="dude">
+
+<!-- [ngClass]="{
+'dude' : this.dude.positionDude === true,
 'dudeMini': this.dude.positionDude === false
-}" (click)=clickOnDude() class=>
+}" -->

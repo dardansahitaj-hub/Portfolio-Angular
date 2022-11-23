@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BarAnswerComponent } from '../bar-answer/bar-answer.component';
 
 @Component({
   selector: 'app-dude',
@@ -19,14 +20,16 @@ export class DudeComponent implements OnInit {
   }
 
 
-  constructor() {
+  constructor(public BarAnswer: BarAnswerComponent) {
 
   }
 
   ngOnInit(): void { }
 
   clickOnDude() {
-    this.shrinkDude()
+    console.log("bonjour")
+
+    console.log(this.BarAnswer.answerBar.server.reponseValue)
   }
   getClass() {
 

@@ -1,12 +1,41 @@
 header {
     background-color: #2c306080;
     height: 25px;
-    width: 100%;
     box-shadow: 1px 4px 6px #00a3cf;
-    padding: 13px;
     z-index: 1000;
-    position: fixed;
+
     margin-top: 1.2rem;
+    animation: barre_progression 5s;
+    -webkit-animation: barre_progression 5s;
+}
+
+/*****animation barre progression *****/
+@keyframes barre_progression {
+    from {
+        margin-left: 100%;
+    }
+
+    75% {
+        margin-left: 50%;
+    }
+
+    to {
+        margin-left: 210px;
+    }
+}
+
+@-webkit-keyframes barre_progression {
+    from {
+        margin-left: 100%;
+    }
+
+    75% {
+        margin-left: 50%;
+    }
+
+    to {
+        margin-left: 210px;
+    }
 }
 
 .logoDardanSahitaj {
@@ -14,6 +43,7 @@ header {
     width: 50px;
     margin-top: 0rem;
     left: 10px;
+    z-index: 100;
 }
 
 nav ul {

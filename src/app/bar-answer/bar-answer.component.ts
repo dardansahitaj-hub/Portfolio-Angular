@@ -6,27 +6,26 @@ import { AnswerBarService } from '../service/answer-bar.service';
   styleUrls: ['./bar-answer.component.css']
 })
 export class BarAnswerComponent implements OnInit {
-
-
-  constructor() {
-  }
-
-  ngOnInit(): void {
-
-  }
   answerBar = {
     'server': {
       'resultat': '',
       'reponseValue': ''
     }
   };
-
   questionAnswer = {
     'oui': 'quoi oui?',
     'non': 'quoi non ?'
   }
 
   questionAsk = [];
+  constructor() {
+  }
+
+  ngOnInit(): void {
+    this.answerBar.server.reponseValue = "teeeest"
+  }
+
+
 
   onEnter(value: string) {
 
@@ -47,6 +46,7 @@ export class BarAnswerComponent implements OnInit {
     }
 
   }
+
 
   getQuestionClient() {
 
