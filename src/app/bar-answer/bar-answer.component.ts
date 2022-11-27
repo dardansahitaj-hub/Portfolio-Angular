@@ -32,18 +32,18 @@ export class BarAnswerComponent implements OnInit {
     const valueEnter = value;
 
     console.log(Object.entries(this.questionAnswer));
-    if (value === "oui") {
+    if (value == "oui") {
 
       this.answerBar.server.reponseValue = "Je vous écoute!"
       value = ''
     }
-    else if (value === "test" || value === "oui") {
+    else if (value == "test" || value == "oui") {
       this.answerBar.server.reponseValue = "teest"
     }
 
-    else {
-      this.answerBar.server.reponseValue = "Vous restez la bienvenue ! "
-    }
+    // else {
+    //   this.answerBar.server.reponseValue = "Vous restez la bienvenue ! "
+    // }
 
   }
 

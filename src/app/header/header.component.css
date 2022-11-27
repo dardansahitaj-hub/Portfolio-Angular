@@ -1,42 +1,13 @@
 header {
-    background-color: #2c306080;
+    background-color: #2c3060;
     height: 25px;
     box-shadow: 1px 4px 6px #00a3cf;
     z-index: 1000;
-
     margin-top: 1.2rem;
     animation: barre_progression 5s;
     -webkit-animation: barre_progression 5s;
 }
 
-/*****animation barre progression *****/
-@keyframes barre_progression {
-    from {
-        margin-left: 100%;
-    }
-
-    75% {
-        margin-left: 50%;
-    }
-
-    to {
-        margin-left: 210px;
-    }
-}
-
-@-webkit-keyframes barre_progression {
-    from {
-        margin-left: 100%;
-    }
-
-    75% {
-        margin-left: 50%;
-    }
-
-    to {
-        margin-left: 210px;
-    }
-}
 
 .logoDardanSahitaj {
     position: absolute;
@@ -56,8 +27,7 @@ nav ul li {
     --c: #2C3060;
     color: var(--c);
     border: 0.1em solid var(--c);
-    width: 10em;
-    height: 2em;
+    width: 180px;
     position: relative;
     overflow: hidden;
     z-index: 1;
@@ -65,38 +35,44 @@ nav ul li {
 }
 
 nav ul li:hover {
-    top: 5px;
-    width: 15rem;
-    height: 3em;
+    top: 2px;
+    width: 190px;
     transition: 2s linear;
 }
 
 nav ul li a {
     text-align: center;
-    font-size: 1rem !important;
+    font-size: 12px !important;
     color: white;
+    text-decoration: unset;
 }
 
 nav ul li a:hover {
     text-align: center;
-    font-size: 1.3rem !important;
+    font-size: 15px !important;
     transition: 1s linear;
+}
+
+nav ul li img {
+    width: 25px;
+    margin: 2px;
+}
+
+nav ul li img:hover {
+    width: 29px;
+    margin: 2px;
 }
 
 nav ul li span {
     position: absolute;
-    width: 25%;
+    width: 100%;
     height: 100%;
     background-color: var(--c);
     transform: translateY(150%);
     left: calc((var(--n) - 1) * 25%);
-    transition: 0.5s;
+    transition: 1s;
     transition-delay: calc((var(--n) - 1) * 0.1s);
     z-index: -1;
-}
-
-nav ul li:hover {
-    color: black;
 }
 
 nav ul li:hover span {
