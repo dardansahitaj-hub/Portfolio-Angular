@@ -14,21 +14,10 @@ export class ProgrammationComponent implements OnInit, AfterViewInit {
   progressBar = {
     'html': {
       'value': '',
-      'keyframes': '\
-@-webkit-keyframes spinIt {\
-    100% {\
-        -webkit-transform: rotate(A_DYNAMIC_VALUE);\
-    }\
-}\
-@-moz-keyframes spinIt {\
-    100% {\
-        -webkit-transform: rotate(A_DYNAMIC_VALUE);\
-    }\
-}'
-    },
-    'css': '90%',
-    'php': '75%',
-    'test': '<div class="barre_progression"></div>'
+      'css': '90%',
+      'php': '75%',
+      'test': '<div class="barre_progression"></div>'
+    }
   }
 
   constructor(private renderer: Renderer2,
@@ -40,7 +29,7 @@ export class ProgrammationComponent implements OnInit, AfterViewInit {
   }
   ngAfterViewInit(): void {
     console.log(this.testBar.nativeElement)
-    this.elementRef.nativeElement.style.fontSize = '45px'
+    this.elementRef.nativeElement.style.width = '20px'
 
   }
 
