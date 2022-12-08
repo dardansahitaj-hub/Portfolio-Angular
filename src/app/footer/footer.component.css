@@ -1,6 +1,8 @@
 footer {
     width: 80%;
     height: 2rem;
+    bottom: 0;
+    padding-top: 20px;
     margin-bottom: 3rem;
     box-shadow: 1px 4px 6px #2c3060;
     background-color: #00a3cf !important;
