@@ -25,8 +25,6 @@ export class BarAnswerComponent implements OnInit {
     this.answerBar.server.reponseValue = "teeeest"
   }
 
-
-
   onEnter(value: string) {
 
     const valueEnter = value;
