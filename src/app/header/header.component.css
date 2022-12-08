@@ -44,7 +44,7 @@ nav ul li a {
     text-align: center;
     font-size: 12px !important;
     color: white;
-    text-decoration: unset;
+    text-decoration: none;
 }
 
 nav ul li a:hover {

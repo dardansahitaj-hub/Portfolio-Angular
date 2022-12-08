@@ -18,6 +18,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { AProposDeMoiComponent } from './pages/a-propos-de-moi/a-propos-de-moi.component';
 import { GraphismeComponent } from './pages/graphisme/graphisme.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,7 +40,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [DudeComponent,
     ContactComponent,

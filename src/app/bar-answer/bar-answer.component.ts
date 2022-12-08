@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, Input, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { AnswerBarService } from '../service/answer-bar.service';
 @Component({
@@ -6,6 +7,8 @@ import { AnswerBarService } from '../service/answer-bar.service';
   styleUrls: ['./bar-answer.component.css']
 })
 export class BarAnswerComponent implements OnInit {
+
+
   answerBar = {
     'server': {
       'resultat': '',
@@ -13,42 +16,68 @@ export class BarAnswerComponent implements OnInit {
     }
   };
   questionAnswer = {
+    'demande': '',
     'oui': 'quoi oui?',
     'non': 'quoi non ?'
   }
 
-  questionAsk = [];
-  constructor() {
+  Client = {
+    'clientInfo': {
+      'ipAdress': ''
+    }
+
+  }
+  questionAsk = {
+    'oui': 'quoi oui ?',
+    "non": 'quoi non?',
+    'bonjour': 'Bonjour, vous allez bien?',
+    'date': Date(),
+    'ip': this.getIPAddress(),
+  };
+
+  constructor(private http: HttpClient) {
+
   }
 
   ngOnInit(): void {
-    this.answerBar.server.reponseValue = "teeeest"
+    this.answerBar.server.reponseValue = "Bonjour"
+    this.getIPAddress();
   }
 
   onEnter(value: string) {
 
     const valueEnter = value;
+    this.questionAnswer.demande = value;
 
-    console.log(Object.entries(this.questionAnswer));
-    if (value == "oui") {
-
-      this.answerBar.server.reponseValue = "Je vous écoute!"
-      value = ''
+    if (valueEnter.includes("+") || valueEnter.includes("-") || valueEnter.includes("*") || valueEnter.includes("/")) {
+      this.answerBar.server.reponseValue = eval(this.questionAnswer.demande)
     }
-    else if (value == "test" || value == "oui") {
-      this.answerBar.server.reponseValue = "teest"
-    }
+    else {
+      for (const [key, value] of Object.entries(this.questionAsk)) {
+        if (valueEnter.includes(key)) {
+          this.answerBar.server.reponseValue = String(value)
+        }
 
-    // else {
-    //   this.answerBar.server.reponseValue = "Vous restez la bienvenue ! "
-    // }
+      }
+
+    }
 
   }
 
-
-  getQuestionClient() {
+  doMath() {
 
   }
 
+  getIPAddress() {
+    this.http.get("http://api.ipify.org/?format=json").subscribe((res: any) => {
+      console.log(res.ip)
+      this.questionAsk.ip = res.ip
+      this.answerBar.server.reponseValue = res.ip
+    });
+  }
+
+  getDate() {
+    return Date;
+  }
 
 }
