@@ -19,6 +19,8 @@ import { AProposDeMoiComponent } from './pages/a-propos-de-moi/a-propos-de-moi.c
 import { GraphismeComponent } from './pages/graphisme/graphisme.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { LightgalleryModule } from 'lightgallery/angular';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +43,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    [LightgalleryModule]
   ],
   providers: [DudeComponent,
     ContactComponent,
