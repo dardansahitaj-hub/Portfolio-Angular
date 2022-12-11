@@ -44,6 +44,8 @@ import { BarProgressionComponent } from './components/bar-progression/bar-progre
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule
+    HttpClientModule,
+    [LightgalleryModule]
   ],
   providers: [DudeComponent,
     ContactComponent,

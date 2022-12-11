@@ -8,7 +8,6 @@ import { AnswerBarService } from '../service/answer-bar.service';
 })
 export class BarAnswerComponent implements OnInit {
 
-
   answerBar = {
     'server': {
       'resultat': '',
@@ -40,7 +39,7 @@ export class BarAnswerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.answerBar.server.reponseValue = "Bonjour"
+    this.answerBar.server.reponseValue = "Bonjour, je suis la pour répondre à toutes vos questions --->"
     this.getIPAddress();
   }
 
@@ -49,7 +48,12 @@ export class BarAnswerComponent implements OnInit {
     const valueEnter = value;
     this.questionAnswer.demande = value;
 
-    if (valueEnter.includes("+") || valueEnter.includes("-") || valueEnter.includes("*") || valueEnter.includes("/")) {
+    if (valueEnter.includes("+")
+      || valueEnter.includes("-")
+      || valueEnter.includes("*")
+      || valueEnter.includes("/")
+      || valueEnter.includes("%")
+    ) {
       this.answerBar.server.reponseValue = eval(this.questionAnswer.demande)
     }
     else {
@@ -64,15 +68,11 @@ export class BarAnswerComponent implements OnInit {
 
   }
 
-  doMath() {
-
-  }
-
   getIPAddress() {
     this.http.get("http://api.ipify.org/?format=json").subscribe((res: any) => {
       console.log(res.ip)
       this.questionAsk.ip = res.ip
-      this.answerBar.server.reponseValue = res.ip
+      this.Client.clientInfo.ipAdress = res.ip
     });
   }
 
