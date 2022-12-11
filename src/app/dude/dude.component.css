@@ -1,8 +1,8 @@
 .dude {
     width: 7rem;
-    margin-left: 1%;
+    margin-left: 30px;
     transition: 0.75s linear;
-    position: fixed;
+    float: left;
 }
 
 .dudeMini {

@@ -19,6 +19,7 @@ import { AProposDeMoiComponent } from './pages/a-propos-de-moi/a-propos-de-moi.c
 import { GraphismeComponent } from './pages/graphisme/graphisme.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BarProgressionComponent } from './components/bar-progression/bar-progression.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     FormationComponent,
     ContactComponent,
     AProposDeMoiComponent,
-    GraphismeComponent
+    GraphismeComponent,
+    BarProgressionComponent
   ],
   imports: [
     BrowserModule,

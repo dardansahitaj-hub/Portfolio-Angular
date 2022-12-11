@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, ViewChild, ElementRef, AfterViewInit, Renderer2 } from '@angular/core';
+import { BarProgressionComponent } from 'src/app/components/bar-progression/bar-progression.component';
 
 @Component({
   selector: 'app-programmation',
@@ -12,11 +13,19 @@ export class ProgrammationComponent implements OnInit, AfterViewInit {
 
 
   progressBar = {
-    'html': {
-      'value': '',
-      'css': '90%',
-      'php': '75%',
-      'test': '<div class="barre_progression"></div>'
+    'programming': {
+      'capacity': {
+        'html': '95%',
+        'css': '90%',
+        'php': '75%',
+        'javascript': '70%',
+        'angular': '55%',
+        'typescript': '60%',
+        'python': '25%',
+        'wamp': '68%',
+        'mysql': '59%',
+        'mariadb': '65%',
+      }
     }
   }
 
