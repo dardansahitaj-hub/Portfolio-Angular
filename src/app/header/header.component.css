@@ -39,7 +39,7 @@ nav ul li {
 }
 
 nav ul li:hover {
-    animation: gelatine 1s infinite;
+    animation: gelatine 0.7s infinite;
 }
 
 nav ul li:hover {

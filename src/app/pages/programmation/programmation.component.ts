@@ -10,6 +10,7 @@ export class ProgrammationComponent implements OnInit, AfterViewInit {
 
   @ViewChild('testBar')
   testBar!: ElementRef;
+  title: String = "Mes compétences en programmation"
 
 
   progressBar = {
@@ -40,7 +41,6 @@ export class ProgrammationComponent implements OnInit, AfterViewInit {
 
   }
   ngAfterViewInit(): void {
-    console.log(this.testBar.nativeElement)
     this.elementRef.nativeElement.style.width = '20px'
 
   }

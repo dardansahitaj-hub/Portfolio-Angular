@@ -1,3 +1,8 @@
+h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
 .imgDev {
     width: 75px;
     height: 75px;
@@ -17,4 +22,12 @@
     margin-top: 7px;
     animation-name: loading;
     animation-duration: 5s;
+}
+
+.button {
+    background-color: #2c3060 !important;
+    margin-top: 7px;
+    animation-name: loading;
+    animation-duration: 5s;
+    color: white;
 }

@@ -11,11 +11,13 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    border: 2px solid #2c3060;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 101;
+
 }
 
 .question-button {
@@ -28,8 +30,7 @@
 }
 
 .question-button:hover {
-    animation: gelatine 0.5s infinite;
-    ;
+    animation: gelatine 0.5s;
 }
 
 .send-button {
@@ -43,5 +44,5 @@
 }
 
 .send-button:hover {
-    animation: gelatine 0.5s infinite;
+    animation: gelatine 0.2s;
 }

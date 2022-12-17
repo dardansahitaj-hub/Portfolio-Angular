@@ -7,4 +7,9 @@ body {
 
 .gallery-item {
     margin: 5px;
+    width: 500px;
+}
+
+.img-responsive {
+    width: 250px;
 }
