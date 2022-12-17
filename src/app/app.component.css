@@ -33,21 +33,6 @@
     color: white;
 }
 
-.corps {
-    margin-top: 85px;
-    min-height: 790px;
-}
-
-.the-middle {
-    padding-top: 2rem !important;
-}
-
-.styleBasic {
-    box-shadow: 1px 4px 6px #00A3CF;
-    background-color: #2C3060 !important;
-    text-shadow: 1px 4px 6px #2C3060;
-}
-
 @keyframes gelatine {
 
     from,

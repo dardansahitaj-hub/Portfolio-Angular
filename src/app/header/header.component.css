@@ -22,7 +22,7 @@ header {
 }
 
 nav ul {
-    margin-top: 1rem;
+
     list-style-type: none;
     padding: 0;
 }
@@ -31,7 +31,7 @@ nav ul li {
     --c: #2C3060;
     color: var(--c);
     border: 0.1em solid var(--c);
-    width: 180px;
+    width: 186px;
     position: relative;
     overflow: hidden;
     z-index: 1;

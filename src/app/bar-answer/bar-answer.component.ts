@@ -33,7 +33,13 @@ export class BarAnswerComponent implements OnInit {
     'date': Date(),
     'ip': this.getIPAddress(),
     'aurevoir': 'Merci de votre venu à bientôt!',
-    'base de donnée': 'La base de données est une collection organisée de données connexes où les données sont stockées et organisées pour servir un objectif spécifique.'
+    'base de donnée': 'La base de données est une collection organisée de données connexes où les données sont stockées et organisées pour servir un objectif spécifique.',
+    'couleur favori': 'Ma couleur préférer est le vert!',
+    'film préférer': 'Mon film préférer est Matrix!',
+    'language de programmation préférer': '',
+    'sport favori': 'Mon sport favoris est le football',
+    'date d\'anniversaire': 'Je suis née le 28 décembre 1994',
+    'lieu de n\'aissance': 'Je suis née à Suhareka au Kosovo'
   };
 
 
@@ -54,6 +60,7 @@ export class BarAnswerComponent implements OnInit {
 
   onEnter(value: string) {
 
+    console.log("value" + value.toLowerCase())
     const valueEnter = value;
     this.questionAnswer.demande = value;
 
@@ -67,7 +74,8 @@ export class BarAnswerComponent implements OnInit {
     }
     else {
       for (const [key, value] of Object.entries(this.questionAsk)) {
-        if (valueEnter.includes(key)) {
+        if (valueEnter.toLowerCase().includes(key)) {
+          console.log("value enter : " + valueEnter.toLowerCase())
           this.answerBar.server.reponseValue = String(value)
         }
 

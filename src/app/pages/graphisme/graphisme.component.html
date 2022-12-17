@@ -1,6 +1,8 @@
 <!-- <button (click)="addImage()">Add image</button> -->
 <div>
-    <h2>Photos</h2>
+    <button class="button">Adobe Illustrator</button>
+    <button class="button">Adobe Photoshop</button>
+
     <lightgallery [settings]="settings" [onInit]="onInit"
         class="d-flex justify-content-center align-items-center flex-wrap">
         <a *ngFor="let item of items" [attr.data-lg-size]="item.size" className="gallery-item" [attr.href]="item.src">

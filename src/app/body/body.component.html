@@ -1,5 +1,10 @@
-<!-- début BODYID -->
-<div id="body">
-    <app-carrousel *ngIf="routes.url === '/'"></app-carrousel>
-    <router-outlet></router-outlet>
-</div><!-- fin BODYID -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="body">
+                <app-carrousel *ngIf="routes.url === '/'"></app-carrousel>
+                <router-outlet></router-outlet>
+            </div><!-- fin BODYID -->
+        </div>
+    </div>
+</div>
