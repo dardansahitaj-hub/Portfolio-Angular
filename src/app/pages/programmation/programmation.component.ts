@@ -25,6 +25,9 @@ export class ProgrammationComponent implements OnInit, AfterViewInit {
         'wamp': '68%',
         'mysql': '59%',
         'mariadb': '65%',
+      },
+      'urlProjects': {
+        'html': '../projets/'
       }
     }
   }

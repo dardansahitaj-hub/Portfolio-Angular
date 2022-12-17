@@ -32,7 +32,11 @@ export class BarAnswerComponent implements OnInit {
     'bonjour': 'Bonjour, vous allez bien?',
     'date': Date(),
     'ip': this.getIPAddress(),
+    'aurevoir': 'Merci de votre venu à bientôt!',
+    'base de donnée': 'La base de données est une collection organisée de données connexes où les données sont stockées et organisées pour servir un objectif spécifique.'
   };
+
+
 
   constructor(private http: HttpClient) {
 
@@ -41,6 +45,11 @@ export class BarAnswerComponent implements OnInit {
   ngOnInit(): void {
     this.answerBar.server.reponseValue = "Bonjour, je suis la pour répondre à toutes vos questions --->"
     this.getIPAddress();
+  }
+
+  getBarranswer() {
+    console.log(this.answerBar.server.reponseValue)
+    return this.answerBar.server.reponseValue
   }
 
   onEnter(value: string) {
@@ -70,7 +79,6 @@ export class BarAnswerComponent implements OnInit {
 
   getIPAddress() {
     this.http.get("http://api.ipify.org/?format=json").subscribe((res: any) => {
-      console.log(res.ip)
       this.questionAsk.ip = res.ip
       this.Client.clientInfo.ipAdress = res.ip
     });

@@ -15,4 +15,6 @@
 .progress-bar {
     background-color: #2c3060 !important;
     margin-top: 7px;
+    animation-name: loading;
+    animation-duration: 5s;
 }

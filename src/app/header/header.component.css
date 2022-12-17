@@ -17,6 +17,10 @@ header {
     z-index: 100;
 }
 
+.logoDardanSahitaj:hover {
+    animation: gelatine 2s infinite;
+}
+
 nav ul {
     margin-top: 1rem;
     list-style-type: none;
@@ -32,6 +36,10 @@ nav ul li {
     overflow: hidden;
     z-index: 1;
     transition: 0.5s;
+}
+
+nav ul li:hover {
+    animation: gelatine 1s infinite;
 }
 
 nav ul li:hover {
