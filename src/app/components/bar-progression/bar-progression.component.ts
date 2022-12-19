@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ThemePalette } from '@angular/material/core';
 
 
 @Component({
@@ -16,6 +15,3 @@ export class BarProgressionComponent implements OnInit {
   }
 
 }
-
-
-

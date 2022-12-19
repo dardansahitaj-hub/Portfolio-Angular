@@ -19,7 +19,9 @@ import { AProposDeMoiComponent } from './pages/a-propos-de-moi/a-propos-de-moi.c
 import { GraphismeComponent } from './pages/graphisme/graphisme.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { BarProgressionComponent } from './components/bar-progression/bar-progression.component';
+import { LightgalleryModule } from 'lightgallery/angular';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,15 +38,15 @@ import { BarProgressionComponent } from './components/bar-progression/bar-progre
     FormationComponent,
     ContactComponent,
     AProposDeMoiComponent,
-    GraphismeComponent,
-    BarProgressionComponent
+    GraphismeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    [LightgalleryModule]
+    [LightgalleryModule],
+    NgxTypedJsModule
   ],
   providers: [DudeComponent,
     ContactComponent,
