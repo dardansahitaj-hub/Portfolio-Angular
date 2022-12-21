@@ -3,7 +3,7 @@
         <div class="col">
             <div id="body">
                 <app-carrousel *ngIf="routes.url === '/'"></app-carrousel>
-                <router-outlet></router-outlet>
+                <router-outlet *ngIf="routes.url !== '/'"></router-outlet>
             </div><!-- fin BODYID -->
         </div>
     </div>

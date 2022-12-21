@@ -27,7 +27,6 @@
               "src/styles.css",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "node_modules/@videogular/ngx-videogular/fonts/videogular.css",
-              "styles.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
@@ -39,7 +38,7 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
+                  "maximumWarning": "5000kb",
                   "maximumError": "1mb"
                 },
                 {

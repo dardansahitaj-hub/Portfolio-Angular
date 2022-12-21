@@ -5,11 +5,32 @@ body {
     margin: 0;
 }
 
+.border-image-gallery {
+    width: 200px;
+    height: 200px;
+    padding: 5px;
+    overflow: hidden;
+}
+
 .gallery-item {
-    margin: 5px;
-    width: 500px;
+    margin: 10px;
+
 }
 
 .img-responsive {
-    width: 250px;
+    width: 100%;
+    margin: 10px;
+    height: auto;
+}
+
+.button {
+    color: white;
+    width: 420px;
+    text-shadow: 1px 4px 6px #2c3060;
+    margin-top: 10px;
+    text-align: center;
+    z-index: 101;
+    box-shadow: 1px 4px 6px #2c3060;
+    background-color: #00a3cf !important;
+    border: 1px solid #2c3060;
 }
