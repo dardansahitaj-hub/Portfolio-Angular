@@ -10,7 +10,7 @@ export class ProgrammationComponent implements OnInit, AfterViewInit {
 
   @ViewChild('testBar')
   testBar!: ElementRef;
-  title: String = "Mes compétences en programmation"
+  title: String = ""
 
 
   progressBar = {

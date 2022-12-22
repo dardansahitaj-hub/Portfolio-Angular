@@ -9,12 +9,13 @@ import { MarketingComponent } from './pages/marketing/marketing.component';
 import { ProgrammationComponent } from './pages/programmation/programmation.component';
 
 const routes: Routes = [
-  { path: 'a-propos-de-moi', component: AProposDeMoiComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'formation', component: FormationComponent },
-  { path: 'graphisme', component: GraphismeComponent },
-  { path: 'marketing', component: MarketingComponent },
-  { path: 'programmation', component: ProgrammationComponent },
+  { path: 'a-propos-de-moi', component: AProposDeMoiComponent, title: 'Dardan Sahitaj - A propos de moi' },
+  { path: 'contact', component: ContactComponent, title: 'Dardan Sahitaj - Contact' },
+  { path: 'formation', component: FormationComponent, title: 'Dardan Sahitaj - Formation' },
+  { path: 'graphisme', component: GraphismeComponent, title: 'Dardan Sahitaj - Graphisme' },
+  { path: 'marketing', component: MarketingComponent, title: 'Dardan Sahitaj - Marketing' },
+  { path: 'programmation', component: ProgrammationComponent, title: 'Dardan Sahitaj - Programmation' }
+
 ];
 
 @NgModule({
