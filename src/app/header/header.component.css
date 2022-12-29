@@ -1,6 +1,7 @@
 header {
-    background-color: #2c3060;
+
     height: 25px;
+    background-color: #2c3060;
     box-shadow: 1px 4px 6px #00a3cf;
     z-index: 1000;
     animation: barre_progression 5s;
