@@ -10,8 +10,13 @@
     <lightgallery [settings]="settings" [onInit]="onInit"
         class="d-flex justify-content-center align-items-center flex-wrap">
         <a *ngFor="let item of items" [attr.data-lg-size]="item.size" className="gallery-item" [attr.href]="item.src">
+            <h3>titre</h3>
             <div class="border-image-gallery">
                 <img class="img-responsive" className="img-responsive" src="{{ item.thumb }}" />
+                <div class="date">
+                    <span>18 déc 2022</span>
+                </div>
+
             </div>
         </a>
     </lightgallery>

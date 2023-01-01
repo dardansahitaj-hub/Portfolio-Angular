@@ -5,16 +5,29 @@ body {
     margin: 0;
 }
 
+h3 {
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+span {
+    color: white;
+    float: right;
+}
+
 .border-image-gallery {
-    width: 200px;
+    width: 350px;
     height: 200px;
     padding: 5px;
     overflow: hidden;
+    border: 5px solid #2c3060;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .gallery-item {
     margin: 10px;
-
 }
 
 .img-responsive {
