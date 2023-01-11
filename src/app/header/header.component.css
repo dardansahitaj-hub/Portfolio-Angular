@@ -1,6 +1,6 @@
 header {
-    height: 25px;
     background-color: #2c3060;
+    height: 25px;
     box-shadow: 1px 4px 6px #00a3cf;
     z-index: 1000;
     animation: barre_progression 5s;
@@ -43,15 +43,32 @@ nav ul li {
     transition: 0.5s;
 }
 
-nav ul li:hover {
-    animation: gelatine 0.7s infinite;
+.mat-menu-panel {
+    background: #293060 !important;
 }
 
-nav ul li:hover {
+button {
+    --c: white;
+    color: var(--c);
+    border: 0.1em solid var(--c);
+    width: 186px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    background-color: #2c3060;
+}
+
+
+/* nav ul li:hover {
+    animation: gelatine 0.7s infinite;
+} */
+
+/* nav ul li:hover {
     top: 2px;
     width: 190px;
     transition: 2s linear;
-}
+} */
 
 nav ul li a {
     text-align: center;

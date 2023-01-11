@@ -25,7 +25,11 @@ import { VgCoreModule } from '@videogular/ngx-videogular/core';
 import { VgControlsModule } from '@videogular/ngx-videogular/controls';
 import { VgOverlayPlayModule } from '@videogular/ngx-videogular/overlay-play';
 import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { MatMenu } from '@angular/material';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,19 +46,23 @@ import { VgBufferingModule } from '@videogular/ngx-videogular/buffering';
     FormationComponent,
     ContactComponent,
     AProposDeMoiComponent,
-    GraphismeComponent
+    GraphismeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    [LightgalleryModule],
+    LightgalleryModule,
     NgxTypedJsModule,
     VgCoreModule,
     VgControlsModule,
     VgOverlayPlayModule,
-    VgBufferingModule
+    VgBufferingModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
+    MatCardModule,
+    MatIconModule
   ],
   providers: [DudeComponent,
     ContactComponent,

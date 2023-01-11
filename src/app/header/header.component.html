@@ -2,51 +2,158 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <nav class="d-flex justify-content-center align-items-center">
+                <nav class="d-flex">
                     <img src="assets/img/logo.png" class="logoDardanSahitaj" alt="" routerLink="/">
                     <ul class="list-group list-group-horizontal ">
+
+
+                        <!-- ######################## PROGRAMMATION MENU START ######################## -->
                         <li class="buttonHeader" alt="Programmation">
-                            <a routerLink="/programmation">
+                            <a routerLink="/programmation" [matMenuTriggerFor]="menuDev"
+                                (click)="openMatMenuProgrammatically()">
                                 <img src="../../assets/img/icon/menu/binary-code.png" alt="" srcset="">
-                                Développement
+                                Programmation
                                 <span></span><span></span><span></span><span></span>
+
+                                <!--First level Menu-->
+                                <mat-menu #menuDev="matMenu">
+                                    <button mat-menu-item [matMenuTriggerFor]="frontend">frontend</button>
+                                    <button mat-menu-item [matMenuTriggerFor]="backend">backend</button>
+                                </mat-menu>
+
+                                <!--Second level sub Menu-->
+                                <mat-menu #frontend="matMenu">
+                                    <button mat-menu-item [matMenuTriggerFor]="javascript">
+                                        Javascript
+                                    </button>
+                                    <button mat-menu-item>Typescript</button>
+                                    <button mat-menu-item>Angular</button>
+                                    <button mat-menu-item>Ionic</button>
+                                </mat-menu>
+
+                                <mat-menu #backend="matMenu">
+                                    <button mat-menu-item>PHP</button>
+                                    <button mat-menu-item>SQL</button>
+                                </mat-menu>
+
+                                <!--Third level sub Menu-->
+                                <mat-menu #javascript="matMenu">
+                                    <button mat-menu-item>jQuery</button>
+                                    <button mat-menu-item>Vuejs</button>
+                                </mat-menu>
                             </a>
                         </li>
+                        <!-- ######################## PROGRAMMATION MENU END ######################## -->
+
+                        <!-- ######################## GRAPHISME MENU START ######################## -->
                         <li class="buttonHeader" alt="Graphisme">
-                            <a routerLink="/graphisme">
+                            <a routerLink="/graphisme" [matMenuTriggerFor]="menuGraphisme">
                                 <img src="../../assets/img/icon/menu/graphic-tablet.png" alt="" srcset="">
                                 Graphisme
                                 <span></span><span></span><span></span><span></span>
+
+                                <!--First level Menu-->
+                                <mat-menu #menuGraphisme="matMenu">
+                                    <button mat-menu-item>Retouche photos</button>
+                                    <button mat-menu-item>Vectoriel</button>
+                                </mat-menu>
                             </a>
                         </li>
+                        <!-- ######################## GRAPHISME MENU END ######################## -->
+
+                        <!-- ######################## FORMATIONS MENU START ######################## -->
                         <li class="buttonHeader" alt="Formation">
-                            <a routerLink="/formation">
+                            <a routerLink="/formation" [matMenuTriggerFor]="menuFormation">
                                 <img src="../../assets/img/icon/menu/male.png" alt="" srcset="">
+
                                 Formation
                                 <span></span><span></span><span></span><span></span>
+
+                                <!--First level Menu-->
+                                <mat-menu #menuFormation="matMenu">
+                                    <button mat-menu-item [matMenuTriggerFor]="FIJ">FIJ</button>
+                                    <button mat-menu-item [matMenuTriggerFor]="FOBAGRA">FOBAGRA</button>
+                                    <button mat-menu-item [matMenuTriggerFor]="TOSA">TOSA</button>
+                                </mat-menu>
+
+                                <!--Second level sub Menu-->
+                                <mat-menu #FIJ="matMenu">
+                                    <button mat-menu-item [matMenuTriggerFor]="javascript">
+                                        Javascript
+                                    </button>
+                                    <button mat-menu-item>Typescript</button>
+                                    <button mat-menu-item>Angular</button>
+                                    <button mat-menu-item>Ionic</button>
+                                </mat-menu>
+
+                                <mat-menu #FOBAGRA="matMenu">
+                                    <button mat-menu-item>Clavier & Souris</button>
+                                    <button mat-menu-item>Cv/Lettre de motivation</button>
+                                    <button mat-menu-item>Word</button>
+                                    <button mat-menu-item>Excel</button>
+                                    <button mat-menu-item>PowerPoint</button>
+                                    <button mat-menu-item>Internet</button>
+                                    <button mat-menu-item>Réseaux Sociaux</button>
+                                    <button mat-menu-item>Google</button>
+                                </mat-menu>
+                                <mat-menu #TOSA="matMenu">
+                                    <button mat-menu-item>PHP</button>
+                                    <button mat-menu-item>SQL</button>
+                                </mat-menu>
+
+                                <!--Third level sub Menu-->
+                                <mat-menu #javascript="matMenu">
+                                    <button mat-menu-item>jQuery</button>
+                                    <button mat-menu-item>Vuejs</button>
+                                </mat-menu>
                             </a>
                         </li>
+                        <!-- ######################## FORMATIONS MENU END ######################## -->
+
+                        <!-- ######################## MARKETING MENU START ######################## -->
                         <li class="buttonHeader" alt="Marketing">
-                            <a routerLink="/marketing">
+                            <a routerLink="/marketing" [matMenuTriggerFor]="menuMarketing">
                                 <img src="../../assets/img/icon/menu/bullhorn.png" alt="" srcset="">
                                 Marketing
                                 <span></span><span></span><span></span><span></span>
+
+                                <!--First level Menu-->
+                                <mat-menu #menuMarketing="matMenu">
+                                    <button mat-menu-item>Campagne Google</button>
+                                    <button mat-menu-item>Réseaux Sociaux</button>
+                                    <button mat-menu-item>SEO</button>
+                                </mat-menu>
                             </a>
                         </li>
+                        <!-- ######################## MARKETING MENU END ######################## -->
+
+                        <!-- ######################## A PROPOS DE MOI MENU START ######################## -->
                         <li class="buttonHeader" alt="A propos de moi">
-                            <a routerLink="/a-propos-de-moi">
+                            <a routerLink="/a-propos-de-moi" [matMenuTriggerFor]="menuAboutMe">
                                 <img src="../../assets/img/icon/menu/information.png" alt="" srcset="">
                                 A propos de moi
                                 <span></span><span></span><span></span><span></span>
+
+                                <!--First level Menu-->
+                                <mat-menu #menuAboutMe="matMenu">
+                                    <button mat-menu-item>Présentation</button>
+                                    <button mat-menu-item>Mes compétences</button>
+                                    <button mat-menu-item>Mon parcours</button>
+                                </mat-menu>
+
                             </a>
                         </li>
+                        <!-- ######################## A PROPOS DE MOI MENU END ######################## -->
+
+                        <!-- ######################## CONTACT MENU START ######################## -->
                         <li class="buttonHeader" alt="Me contacter">
-                            <a routerLink="/contact">
+                            <a routerLink="/contact" [matMenuTriggerFor]="menuFormation">
                                 <img src="../../assets/img/icon/menu/contact.png" alt="">
                                 Contact
                                 <span></span><span></span><span></span><span></span>
                             </a>
                         </li>
+                        <!-- ######################## CONTACT MENU END ######################## -->
                     </ul>
                 </nav>
             </div>
