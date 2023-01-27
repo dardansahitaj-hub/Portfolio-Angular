@@ -12,7 +12,9 @@ header {
     position: sticky;
     margin-bottom: 11px;
     margin-top: 1.2rem;
+    position: fixed;
 }
+
 
 
 .logoDardanSahitaj {
@@ -30,6 +32,8 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav ul li {
@@ -137,4 +141,154 @@ nav ul li span:nth-child(4) {
     box-shadow: 1px 4px 6px #00A3CF;
     background-color: #00A3CF;
     text-shadow: 1px 4px 6px #2C3060;
+}
+
+
+/* ---------------------------------- MOBILE ----------------------------------- */
+@media screen and (max-width:500px) {
+    header {
+        background-color: #2c3060;
+        height: 25px;
+        box-shadow: 1px 4px 6px #00a3cf;
+        z-index: 1000;
+        animation: barre_progression 5s;
+        -webkit-animation: barre_progression 5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: auto;
+        position: sticky;
+        margin-bottom: 11px;
+        margin-top: 1.2rem;
+    }
+
+
+    .logoDardanSahitaj {
+        position: absolute;
+        width: 50px;
+        margin-top: 0rem;
+        left: 10px;
+        z-index: 100;
+    }
+
+    .logoDardanSahitaj:hover {
+        animation: gelatine 2s infinite;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        --c: #2C3060;
+        color: var(--c);
+        border: 0.1em solid var(--c);
+        width: 30px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: 0.5s;
+    }
+
+    .mat-menu-panel {
+        background: #293060 !important;
+    }
+
+    button {
+        --c: white;
+        color: var(--c);
+        border: 0.1em solid var(--c);
+        width: 30px;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        transition: 0.5s;
+        background-color: #2c3060;
+    }
+
+
+    /* nav ul li:hover {
+        animation: gelatine 0.7s infinite;
+    } */
+
+    /* nav ul li:hover {
+        top: 2px;
+        width: 190px;
+        transition: 2s linear;
+    } */
+
+    nav ul li a {
+        text-align: center;
+        font-size: 12px !important;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav ul li a p,
+    nav ul li a button {
+        display: none;
+    }
+
+    nav ul li a:hover {
+        text-align: center;
+        font-size: 15px !important;
+        transition: 1s linear;
+    }
+
+    nav ul li img {
+        width: 25px;
+        margin: 2px;
+    }
+
+    nav ul li img:hover {
+        width: 29px;
+        margin: 2px;
+    }
+
+    nav ul li span {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: var(--c);
+        transform: translateY(150%);
+        left: calc((var(--n) - 1) * 25%);
+        transition: 1s;
+        transition-delay: calc((var(--n) - 1) * 0.1s);
+        z-index: -1;
+    }
+
+    nav ul li:hover span {
+        transform: translateY(0) scale(2);
+    }
+
+    nav ul li span:nth-child(1) {
+        --n: 1;
+    }
+
+    nav ul li span:nth-child(2) {
+        --n: 2;
+    }
+
+    nav ul li span:nth-child(3) {
+        --n: 3;
+    }
+
+    nav ul li span:nth-child(4) {
+        --n: 4;
+    }
+
+    .buttonHeader {
+        background-color: #00A3CF;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .buttonHeader:hover {
+        box-shadow: 1px 4px 6px #00A3CF;
+        background-color: #00A3CF;
+        text-shadow: 1px 4px 6px #2C3060;
+    }
 }

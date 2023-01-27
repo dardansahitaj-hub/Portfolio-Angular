@@ -3,18 +3,14 @@
     height: 50px;
     color: white;
     text-shadow: 1px 4px 6px #2c3060;
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 101;
     box-shadow: 1px 4px 6px #2c3060;
     background-color: #00a3cf !important;
     border: 1px solid #2c3060;
     position: relative;
 }
+
 
 .question-button {
     border-radius: 4px;
@@ -22,7 +18,9 @@
     background-color: #0000007a;
     box-shadow: 1px 4px 6px #ffffff;
     padding: 7px;
-    color: white !important
+    color: white !important;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .question-button:hover {
@@ -41,4 +39,27 @@
 
 .send-button:hover {
     animation: gelatine 0.2s;
+}
+
+
+@media screen and (max-width:500px) {
+    .bar-answer {
+        width: 100% !important;
+        font-size: 12px;
+        height: 85px;
+        display: block;
+    }
+
+    .question-button {
+        padding: 10px 95px;
+        font-size: 11px;
+        margin-left: 216px;
+        /* margin-right: auto; */
+        /* width: 100%;*/
+    }
+
+    .send-button {
+        padding: 0;
+    }
+
 }

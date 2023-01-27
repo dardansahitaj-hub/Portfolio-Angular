@@ -11,7 +11,7 @@ export class BarAnswerComponent implements OnInit {
   answerBar = {
     'server': {
       'resultat': '',
-      'reponseValue': ''
+      'reponseValue': {}
     }
   };
   questionAnswer = {
@@ -39,9 +39,8 @@ export class BarAnswerComponent implements OnInit {
     'language de programmation préférer': '',
     'sport favori': 'Mon sport favoris est le football',
     'date d\'anniversaire': 'Je suis née le 28 décembre 1994',
-    'lieu de n\'aissance': 'Je suis née à Suhareka au Kosovo'
+    'lieu de n\'aissance': 'Je suis née à Suhareka au Kosovo',
   };
-
 
 
   constructor(private http: HttpClient) {
@@ -49,7 +48,7 @@ export class BarAnswerComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.answerBar.server.reponseValue = "Bonjour, je suis la pour répondre à toutes vos questions --->"
+    this.answerBar.server.reponseValue = "Bonjour, je suis la pour répondre à toutes vos questions"
     this.getIPAddress();
   }
 
@@ -59,11 +58,9 @@ export class BarAnswerComponent implements OnInit {
   }
 
   onEnter(value: string) {
-
-    console.log("value" + value.toLowerCase())
     const valueEnter = value;
     this.questionAnswer.demande = value;
-
+    //Calcule
     if (valueEnter.includes("+")
       || valueEnter.includes("-")
       || valueEnter.includes("*")
@@ -71,6 +68,12 @@ export class BarAnswerComponent implements OnInit {
       || valueEnter.includes("%")
     ) {
       this.answerBar.server.reponseValue = eval(this.questionAnswer.demande)
+    }
+    //Chiffres aléatoire
+    else if (valueEnter.includes('"chiffre') || valueEnter.includes("aléatoire")) {
+      const replaced = valueEnter.match(/\d+/g);
+      this.answerBar.server.reponseValue = String(this.randomNumber(replaced[0], replaced[1]))
+
     }
     else {
       for (const [key, value] of Object.entries(this.questionAsk)) {
@@ -95,5 +98,9 @@ export class BarAnswerComponent implements OnInit {
   getDate() {
     return Date;
   }
-
+  randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min)
+  }
 }
+
+

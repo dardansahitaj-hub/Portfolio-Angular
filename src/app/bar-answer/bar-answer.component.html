@@ -1,16 +1,16 @@
 <div class="bar-answer">
     <div class="container">
         <div class="row">
-            <div class="col-7 d-flex align-items-center justify-content-center">
+            <div class="reponseValue">
                 {{this.answerBar.server.reponseValue}}
-                <ngx-typed-js (strings)="[]">
+                <!-- <ngx-typed-js (strings)="[]">
                     <h1 class="typing"></h1>
-                </ngx-typed-js>
+                </ngx-typed-js> -->
             </div>
-            <div class="col-5 d-flex align-items-center justify-content-center">
+            <div class="col-5 col-sm-12 d-flex align-items-center justify-content-center">
                 <input type="text" id="boiteDeDialogueEnvoi" #box (keyup.enter)="onEnter(box.value)"
                     class="question-button" placeholder="Une question?">
-                <button type="button" id="boutonEnvoieBoiteDeDialogue" class="send-button">
+                <button type="button" id="boutonEnvoieBoiteDeDialogue" class="send-button d-none">
                     Envoyer
                 </button>
             </div>
