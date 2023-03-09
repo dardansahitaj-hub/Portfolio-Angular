@@ -1,0 +1,7 @@
+{
+  "name": "Shqip",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
