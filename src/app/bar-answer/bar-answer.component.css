@@ -1,14 +1,15 @@
 .bar-answer {
-    width: 83%;
-    height: 50px;
+    width: 80%;
+    padding: 5px;
     color: white;
     text-shadow: 1px 4px 6px #2c3060;
-    text-align: center;
-    display: flex;
     box-shadow: 1px 4px 6px #2c3060;
     background-color: #00a3cf !important;
     border: 1px solid #2c3060;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 
@@ -20,7 +21,6 @@
     padding: 7px;
     color: white !important;
     margin-left: auto;
-    margin-right: auto;
 }
 
 .question-button:hover {
@@ -48,6 +48,7 @@
         font-size: 12px;
         height: 85px;
         display: block;
+        padding: 0;
     }
 
     .question-button {

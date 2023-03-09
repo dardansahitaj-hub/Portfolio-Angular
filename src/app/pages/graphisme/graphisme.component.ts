@@ -28,6 +28,7 @@ export class GraphismeComponent {
     {
       id: '1',
       size: '500-500',
+      titre: 'Retouche Photo - L\'homme-robot',
       src:
         '/assets/img/projets/graphisme - home robot.jpg',
       thumb:
@@ -40,6 +41,7 @@ export class GraphismeComponent {
     {
       id: '2',
       size: '1400-933',
+      titre: 'Logo - Arm Concept',
       src:
         '/assets/img/projets/logo - arm concept.jpg',
       thumb:
@@ -52,6 +54,7 @@ export class GraphismeComponent {
     {
       id: '3',
       size: '1400-932',
+      titre: 'Logo - Jacothec',
       src:
         '/assets/img/projets/logo - jacothec.png',
       thumb:
@@ -64,6 +67,7 @@ export class GraphismeComponent {
     {
       id: '4',
       size: '1400-932',
+      titre: 'Logo - Jessica Couture',
       src:
         '/assets/img/projets/logo - Jessica couture sans background.png',
       thumb:
@@ -76,6 +80,7 @@ export class GraphismeComponent {
     {
       id: '3',
       size: '1400-932',
+      titre: 'Retouche Photo - Le Paingouin Patineur',
       src:
         '/assets/img/projets/pingouin.jpg',
       thumb:
@@ -88,6 +93,7 @@ export class GraphismeComponent {
     {
       id: '4',
       size: '1400-932',
+      titre: 'Site Web - Belart Expert & Consultant ',
       src:
         '/assets/img/screenshoot - belart.png',
       thumb:
@@ -107,6 +113,7 @@ export class GraphismeComponent {
       {
         id: '4',
         size: '1400-933',
+        titre: '',
         src:
           'https://images.unsplash.com/photo-1609902726285-00668009f004?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80',
         thumb:

@@ -1,23 +1,29 @@
 <!-- <button (click)="addImage()">Add image</button> -->
-<div>
-    <div class="buttons d-flex justify-content-center align-items-center">
-        <button class="button d-flex justify-content-center align-items-center">Adobe Illustrator</button>
-        <button class="button d-flex justify-content-center align-items-center">Adobe Photoshop</button>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="buttons d-flex justify-content-center align-items-center">
+            <button class="button d-flex justify-content-center align-items-center illustrator">Adobe
+                Illustrator</button>
+            <button class="button d-flex justify-content-center align-items-center photoshop">Adobe Photoshop</button>
+        </div>
     </div>
 
-
-
     <lightgallery [settings]="settings" [onInit]="onInit"
-        class="d-flex justify-content-center align-items-center flex-wrap">
+        class="d-flex justify-content-center align-items-center flex-wrap  mt-5">
         <a *ngFor="let item of items" [attr.data-lg-size]="item.size" className="gallery-item" [attr.href]="item.src">
-            <h3>titre</h3>
-            <div class="border-image-gallery">
+            <div class="row">
+                <h3 class="m-2">{{item.titre}}</h3>
+            </div>
+            <div class=" row border-image-gallery">
                 <img class="img-responsive" className="img-responsive" src="{{ item.thumb }}" />
                 <div class="date">
-                    <span>18 déc 2022</span>
+                    <span class="mt-2">18 déc 2022</span>
                 </div>
-
             </div>
         </a>
     </lightgallery>
+
 </div>

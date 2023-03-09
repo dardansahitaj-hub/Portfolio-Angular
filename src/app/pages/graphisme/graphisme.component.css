@@ -16,14 +16,23 @@ span {
     float: right;
 }
 
+.illustrator {
+    border-color: #f37e0c !important;
+}
+
+.photoshop {
+    border-color: #2fa3f7 !important;
+}
+
 .border-image-gallery {
     width: 350px;
-    height: 200px;
+    height: 400px;
     padding: 5px;
-    overflow: hidden;
-    border: 5px solid #2c3060;
+    /* overflow: hidden; */
+    /* border: 1px solid #2c3060; */
     border-radius: 5px;
     margin: 5px;
+    margin-bottom: 50px;
 }
 
 .gallery-item {
@@ -32,9 +41,10 @@ span {
 
 .img-responsive {
     width: 100%;
-    margin: 10px;
+    margin: 0;
     height: auto;
 }
+
 
 .button {
     color: white;
