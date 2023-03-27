@@ -49,18 +49,19 @@
         height: 85px;
         display: block;
         padding: 0;
+        margin-left: 0;
     }
 
     .question-button {
         padding: 10px 95px;
         font-size: 11px;
-        margin-left: 216px;
-        /* margin-right: auto; */
-        /* width: 100%;*/
+        margin: 0 auto;
+        width: 100%;
     }
 
     .send-button {
         padding: 0;
+        margin-left: 0 !important;
     }
 
 }
